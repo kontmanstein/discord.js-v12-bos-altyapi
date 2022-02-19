@@ -116,4 +116,5 @@ client.on("error", e => {
 });
 
 require('dotenv').config()
-client.login(process.env['token']);
+const token = process.env['token']
+client.login(token);
